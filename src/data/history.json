@@ -1,0 +1,78 @@
+{
+  "education": [
+    {
+      "period": "September 2021 – September 2022",
+      "school": " Cranfield University",
+      "link":"https://www.cranfield.ac.uk/courses/taught/software-engineering-for-technical-computing",
+      "degree": "Master’s degree in Software Engineering for Technical Computing Option"
+    },
+    {
+      "period": "September 2019 – September 2022",
+      "school": "ESTIA: Institute of Advanced Industrial Technologies",
+      "link":"https://www.estia.fr/",
+      "degree": "Master’s degree in General Engineering and Innovation"
+    }
+  ],
+  "career": [
+    {      
+      "period": "May 2022 - October 2022",
+      "company": "DASSAULT SYSTEMES",
+      "link":"https://www.3ds.com/fr/",
+      "title": "Front-end developer - Data Science Components",
+      "descriptions":[
+        {
+          "description": "Participated in the functional specifications of new functionalities, contributing to the design of the technical architecture."
+        },
+        {
+          "description": "Designed and implemented new features using React and TypeScript, delivering high-quality code that met project requirements."
+        },
+        {
+          "description": "Conducted thorough testing of newly written code, ensuring adherence to project methods and high standards of code quality."
+        },
+        {
+          "description": "Shared technical knowledge within the team and with the internal ecosystem, fostering a collaborative and supportive work environment."
+        },
+        {
+          "description": "Provided technical support to the internal community, helping them take control of different features of the application and resolve customer problems."
+        }
+      ]
+    },
+    {      
+      "period": "May 2021 - August 2021",
+      "company": "Manayaki",
+      "link":"https://www.manayaki.fr/",
+      "title": "Intern Front-end developer",
+      "descriptions":[
+        {
+          "description": "Co-managed the implementation of a new feature for home delivery, ensuring seamless integration with existing systems and processes."
+        },
+        {
+          "description": "Designed the front-end of a web application as requested by the client, using React, Express, JavaScript, and Bootstrap."
+        },
+        {
+          "description": "Conducted user testing and gathered feedback to improve the user experience and increase customer satisfaction."
+        },
+        {
+          "description": "Maintained high standards of code quality and followed best practices in software development."
+        }
+      ]
+    },
+    {      
+      "period": "January 2020 - March 2020",
+      "company": "Limed ",
+      "link":"https://www.instagram.com/limed.fr/?hl=fr",
+      "title": "Intern Full Stack developer",
+      "descriptions":[
+        {
+          "description": "Learned basics in developing custom web applications using HTML 5, CSS, NodeJS, React JS, Bootstrap and MongoDB."
+        },
+        {
+          "description": "Contributed to the creation of scalable, dynamic and user-friendly web applications by utilizing various front-end and back-end technologies."
+        },
+        {
+          "description": "Assisted in mentoring newer interns and ensured they were comfortable with the codebase, improving the overall productivity and efficiency of the team."
+        }
+      ]
+    }
+  ]
+}

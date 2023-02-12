@@ -1,0 +1,27 @@
+{
+    "customContent": "Seeking a challenging role as a front-end engineer where I can utilize my skills and passion for technology while continuously learning and growing with a dynamic and motivated team. <a href=\"#contact\">Click here<\/a> to contact me! <span role=\"img\" aria-label=\"wave\">👋<\/span>",
+    "skillsset": [
+        {
+            "title": "React",
+            "photo": "/reactLogo.png",
+            "backgroundColor": "#342054",
+            "content": "React is an open-source JavaScript library for building user interfaces. It allows developers to build reusable UI components and manage the state of the application, making it an efficient and scalable tool for front-end web development.",
+            "delay": 0
+        },
+        {
+            "title": "JavaScript",
+            "photo": "/jsLogo.PNG",
+            "backgroundColor": "#342054",
+            "content": "JavaScript is a high-level, dynamic, and interpreted programming language that is widely used for web development. It enables developers to create interactive and dynamic websites by adding behavior to HTML pages.",
+            "delay": 2000
+        },
+        {
+            "title": "TypeScript",
+            "photo": "/tsLogo.PNG",
+            "backgroundColor": "#342054",
+            "content": "TypeScript is a statically typed, object-oriented programming language that builds on JavaScript. It adds optional static typing and class-based object-oriented programming to JavaScript, making it easier to develop large-scale applications.",
+            "delay": 4000
+        }
+        
+    ]
+}

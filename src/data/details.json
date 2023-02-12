@@ -1,0 +1,18 @@
+{
+  "firstName": "Wang",
+  "middleName": " ",
+  "lastName": "David",
+  "titles": [
+    "Front-End developer"
+  ],
+  "socialNetworks": [
+    {
+      "link": "https://github.com/ChenDavid66",
+      "iconName": "faGithub"
+    },
+    {
+      "link": "https://www.linkedin.com/in/david-wang-117921194/",
+      "iconName": "faLinkedin"
+    }
+  ]
+}

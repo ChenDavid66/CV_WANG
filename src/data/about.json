@@ -1,0 +1,54 @@
+{
+  "username": "",
+  "avatar": "../assets/images/avatar-primary-bg.svg",
+  "objective": "<p> Junior developer, passionate about software development. Creative, innovative, I am capable to work on a project from the concept to its realization. My academic experience and internships have allowed me to develop strong programming technical skills as a front-end developer by designing dynamic and interactive web applications with proficiency in JavaScript, TypeScript, and React. I have the ability to function effectively in quick-paced development contexts and have familiarity with best practices for coding and debugging as well as communication skills with proficiency in English and French. <\/p>" ,
+  "resumeUrl": "#",
+  "skills": [
+    {
+      "name": ".NET Core",
+      "confidence": 95,
+      "color": "rgb(255, 209, 92)"
+    },
+    {
+      "name": "NoSQL",
+      "confidence": 85,
+      "color": "rgb(108, 108, 229)"
+    },
+    {
+      "name": "TypeScript",
+      "confidence": 80,
+      "color": "rgb(255, 76, 96)"
+    },
+    {
+      "name": "GraphQL",
+      "confidence": 90,
+      "color": "rgb(51, 105, 30)"
+    }
+  ],
+  "statistics": [
+    {
+      "number": 28,
+      "title": "Open-source projects",
+      "iconPrefix": "fab",
+      "iconName": "osi"
+    },
+    {
+      "number": 59,
+      "title": "Projects completed",
+      "iconPrefix": "fas",
+      "iconName": "tasks"
+    },
+    {
+      "number": 3285,
+      "title": "Cup of coffee",
+      "iconPrefix": "fas",
+      "iconName": "coffee"
+    },
+    {
+      "number": 2,
+      "title": "Publications",
+      "iconPrefix": "far",
+      "iconName": "newspaper"
+    }
+  ]
+}
