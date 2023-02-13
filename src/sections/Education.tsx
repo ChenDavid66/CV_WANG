@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Section, Timeline } from "../components";
 import history from "../data/history.json";
+import { Mortarboard } from "react-bootstrap-icons";
 
 const education = history.education;
 
@@ -18,7 +19,7 @@ export class Education extends React.Component {
                   time={e.period}
                   titleLink={e.link}
                   title={e.school}
-                  /* icon={["fas", "graduation-cap"]} */
+                  icon={<Mortarboard />}
                 >
                   <p>{e.degree}</p>
                 </Timeline>

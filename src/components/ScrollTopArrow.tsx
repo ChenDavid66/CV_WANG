@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ArrowUp } from "react-bootstrap-icons";
 
 const ScrollTopArrow = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -23,7 +24,7 @@ const ScrollTopArrow = () => {
       style={{ display: showScroll ? "block" : "none" }}
       onClick={scrollTop}
     >
-      {/* <FontAwesomeIcon icon={['fas', 'arrow-up']} /> */}
+      <ArrowUp />
     </div>
   );
 };

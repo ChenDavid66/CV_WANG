@@ -1,22 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
-import about from '../data/about.json'
-
+import React from "react";
+import styled from "styled-components";
 const StyledFooter = styled.footer({
-  marginTop: '110px'
-})
+  marginTop: "110px",
+});
 
 export class Footer extends React.Component {
   render() {
-    return(
-      <StyledFooter className="footer">
-        <Container>
-          <span className="copyright">© {(new Date()).getFullYear()} {about.username}.</span>
-        </Container>
-      </StyledFooter>
-    )
+    return <StyledFooter className="footer"></StyledFooter>;
   }
 }
 
-export default Footer
+export default Footer;

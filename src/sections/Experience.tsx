@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Section, Timeline } from "../components";
 import history from "../data/history.json";
+import { JournalCode } from "react-bootstrap-icons";
 
 const career = history.career;
 
@@ -18,7 +19,7 @@ export class Experience extends React.Component {
                   time={c.period}
                   titleLink={c.link}
                   title={c.title}
-                  /* icon={["fas", "briefcase"]} */
+                  icon={<JournalCode />}
                   left="-7px"
                 >
                   <p>{c.company}</p>

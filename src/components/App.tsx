@@ -6,6 +6,7 @@ import {
   Education,
   Experience,
   Skillsset,
+  Contact,
 } from "../sections";
 import { Row, Col, Container } from "react-bootstrap";
 import ScrollTopArrow from "./ScrollTopArrow";
@@ -28,6 +29,7 @@ function App() {
           </Row>
         </Container>
         <Skillsset />
+        <Contact />
       </main>
       <Footer />
       <ScrollTopArrow />
