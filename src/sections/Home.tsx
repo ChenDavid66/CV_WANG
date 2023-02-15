@@ -34,20 +34,6 @@ export class Home extends React.Component {
               </TextLoop>
             </span>
 
-            {/* <ul className="social-icons light list-inline mb-0 mt-4">
-              {details.socialNetworks.map((network) => (
-                <li className="list-inline-item" key={network.iconName}>
-                  <a
-                    href={network.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon icon={fab[network.iconName]} />
-                  </a>
-                </li>
-              ))}
-            </ul> */}
-
             <div className="mt-4">
               <Scroller href="#contact" className="btn btn-kd">
                 Contact me

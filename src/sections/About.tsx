@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
-import { /* Skill, Counter, */ Section } from "../components";
-/* import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core' */
+import { Section } from "../components";
 import about from "../data/about.json";
 
 const Name = styled.div`
@@ -23,8 +22,8 @@ export class About extends React.Component {
             }}
           >
             <img
-              src={"/MYbgpicCartoon.png"}
-              alt="kiendang"
+              src={"public/images/MyBGpicCartoon"}
+              alt="Profile Picture"
               style={{ width: "150px", borderRadius: "5%" }}
             />
           </Col>
