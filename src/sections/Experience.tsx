@@ -10,7 +10,7 @@ export class Experience extends React.Component {
   render() {
     return (
       <Section id="experience" title="Experience">
-        <Row>
+        <Row style={{ overflowY: "auto", height: "500px" }}>
           <Col md={12}>
             <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
               {career.map((c) => (
