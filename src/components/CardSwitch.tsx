@@ -1,32 +1,43 @@
 import React, { Component, useState } from "react";
 import { Github, Linkedin } from "react-bootstrap-icons";
+import "../scss/sections/cardSwitch.scss";
 
 interface CardData {
+  id: number;
   image: string;
   text: string;
+  title: string;
 }
 
-const cardData: CardData[] = [
-  {
-    image: "https://example.com/image1.jpg",
-    text: "Card 1 text",
-  },
-  {
-    image: "https://example.com/image2.jpg",
-    text: "Card 2 text",
-  },
-  {
-    image: "https://example.com/image3.jpg",
-    text: "Card 3 text",
-  },
-];
+interface CardSwitchProps {
+  description: JSX.Element;
+}
 
 interface CardSwitchState {
   activeCardIndex: number;
 }
-
-class CardSwitch extends Component<{}, CardSwitchState> {
-  constructor(props: {}) {
+const cardData: CardData[] = [
+  {
+    id: 1,
+    image: "./images/vortex.jpg",
+    text: "Card 1 text",
+    title: "VvortexX",
+  },
+  {
+    id: 2,
+    image: "./images/manayaki.PNG",
+    text: "Card 2 text",
+    title: "Manayaki",
+  },
+  {
+    id: 3,
+    image: "./images/comingSoon.jpg",
+    text: "Card 2 text",
+    title: "Coming",
+  },
+];
+class CardSwitch extends Component<CardSwitchProps, CardSwitchState> {
+  constructor(props: CardSwitchProps) {
     super(props);
 
     this.state = {
@@ -40,34 +51,49 @@ class CardSwitch extends Component<{}, CardSwitchState> {
 
   render() {
     const { activeCardIndex } = this.state;
-
+    const filteredCardData = cardData.filter(
+      (card) => card.id === activeCardIndex
+    );
     return (
-      <div>
-        <div>
-          {cardData.map((card, index) => (
-            <div
-              key={index}
-              onClick={() => this.handleCardClick(index)}
-              style={{
-                display: "inline-block",
-                padding: "10px",
-                border:
-                  activeCardIndex === index
-                    ? "2px solid blue"
-                    : "2px solid gray",
-                borderRadius: "5px",
-                margin: "10px",
-                cursor: "pointer",
-              }}
-            >
-              <img src={card.image} alt={card.text} style={{ width: "100%" }} />
-              <p style={{ textAlign: "center" }}>{card.text}</p>
+      <div className="card-switch-container">
+        {activeCardIndex === 0 ? (
+          <div className="description">{this.props.description}</div>
+        ) : (
+          <div className="description">
+            <div className="card-list">
+              {filteredCardData.map((card, index) => (
+                <div
+                  key={index}
+                  onClick={() => this.handleCardClick(index)}
+                  className={
+                    activeCardIndex === index
+                      ? "card-list-item-active"
+                      : "card-list-item"
+                  }
+                >
+                  <div className="card">
+                    <img
+                      src={card.image}
+                      alt={card.text}
+                      className="card-image"
+                    />
+                    <p className="card-text">{card.text}</p>
+                    <div className="card-social-links">
+                      <Github className="github" size={25} />
+                      <Linkedin className="linkedin" size={25} />
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
+          </div>
+        )}
+        <div className="project-list">
+          {cardData.map((card, index) => (
+            <a key={index} onClick={() => this.handleCardClick(index + 1)}>
+              <p className="card-text">{card.title}</p>
+            </a>
           ))}
-        </div>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <Github className="github" size={25} />
-          <Linkedin className="linkedin" size={25} />
         </div>
       </div>
     );
