@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
-import { Section } from "../components";
+import { /* Skill, Counter, */ Section } from "../components";
+/* import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core' */
 import about from "../data/about.json";
 
 const Name = styled.div`
@@ -22,7 +23,7 @@ export class About extends React.Component {
             }}
           >
             <img
-              src={"public/images/MyBGpicCartoon"}
+              src={"images/MYbgpicCartoon.png"}
               alt="Profile Picture"
               style={{ width: "150px", borderRadius: "5%" }}
             />

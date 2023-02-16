@@ -3,21 +3,21 @@
     "skillsset": [
         {
             "title": "JavaScript",
-            "photo": "public/images/jsLogo.PNG",
+            "photo": "images/jsLogo.PNG",
             "backgroundColor": "#342054",
             "content": "JavaScript is a foundational language for web development and has been my first programming language. Its versatility and ubiquity make it a popular choice for both front-end and back-end development. As a beginner, JavaScript provided me with a strong foundation for learning other programming concepts, and its widespread use in the industry has allowed me to continue to expand my aptitudes",
             "delay": 0
         },
         {
             "title": "React",
-            "photo": "public/images/reactLogo.png",
+            "photo": "images/reactLogo.PNG",
             "backgroundColor": "#342054",
             "content": "React has been utilized in several of my web development projects for its ability to manage the state of the application efficiently and build reusable UI components. The choice to use React was driven by its popularity and widespread adoption in the industry. I am committed to  mastering this technology and staying current with the latest front-end development trends, as well as keeping a strong understanding of React's advantages and its ability to create high-performing and user-friendly applications. This makes React an essential tool in the web development toolkit.",
             "delay": 2000
         },
         {
             "title": "TypeScript",
-            "photo": "public/images/tsLogo.PNG",
+            "photo": "images/tsLogo.PNG",
             "backgroundColor": "#342054",
             "content": "I choose to keep using TypeScript, which has been used in my web development projects for its statically typed and object-oriented programming approach, making it easier to develop large-scale applications. The use of TypeScript has allowed for a more robust and maintainable codebase, as well as improved code readability. I have gained a strong understanding of TypeScript's features and capabilities, and I am continuously working to improve my skills in this area. TypeScript's compatibility with JavaScript and its growing popularity makes him a great asset for me in the futur",
             "delay": 4000
