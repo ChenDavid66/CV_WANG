@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { Github, Linkedin } from "react-bootstrap-icons";
+import { Github, ArrowDownRightSquare } from "react-bootstrap-icons";
 import "../scss/sections/cardSwitch.scss";
 
 interface CardData {
@@ -7,6 +7,8 @@ interface CardData {
   image: string;
   text: string;
   title: string;
+  url: string;
+  gitHubUrl: string;
 }
 
 interface CardSwitchProps {
@@ -22,18 +24,24 @@ const cardData: CardData[] = [
     image: "./images/vortex.jpg",
     text: "Card 1 text",
     title: "VvortexX",
+    url: "https://www.hostinger.fr/tutoriels/portfolio-developpeur-web",
+    gitHubUrl: "https://github.com/ChenDavid66",
   },
   {
     id: 2,
     image: "./images/manayaki.PNG",
     text: "Card 2 text",
     title: "Manayaki",
+    url: "https://www.manayaki.fr/",
+    gitHubUrl: "https://github.com/ChenDavid66",
   },
   {
     id: 3,
     image: "./images/comingSoon.jpg",
     text: "Card 2 text",
     title: "Coming",
+    url: "https://www.manayaki.fr/",
+    gitHubUrl: "https://github.com/ChenDavid66",
   },
 ];
 class CardSwitch extends Component<CardSwitchProps, CardSwitchState> {
@@ -49,51 +57,66 @@ class CardSwitch extends Component<CardSwitchProps, CardSwitchState> {
     this.setState({ activeCardIndex: index });
   };
 
+  handleClick = (url: string) => {
+    window.open(url, "_blank");
+  };
   render() {
     const { activeCardIndex } = this.state;
-    const filteredCardData = cardData.filter(
+    const filteredCardData = cardData.find(
       (card) => card.id === activeCardIndex
-    );
+    ) ?? {
+      id: 0,
+      image: "",
+      text: "",
+      title: "Default Card",
+      gitHubUrl: "",
+      url: "",
+    };
     return (
       <div className="card-switch-container">
         {activeCardIndex === 0 ? (
           <div className="description">{this.props.description}</div>
         ) : (
           <div className="description">
-            <div className="card-list">
-              {filteredCardData.map((card, index) => (
-                <div
-                  key={index}
-                  onClick={() => this.handleCardClick(index)}
-                  className={
-                    activeCardIndex === index
-                      ? "card-list-item-active"
-                      : "card-list-item"
-                  }
-                >
-                  <div className="card">
-                    <img
-                      src={card.image}
-                      alt={card.text}
-                      className="card-image"
+            <div className="card">
+              <a href={filteredCardData.image} className="card-link">
+                <img
+                  src={filteredCardData.image}
+                  alt="Link to Example Website"
+                />
+              </a>
+              <div className="card-content">
+                <h3>{filteredCardData.title}</h3>
+                <p className="card-text">{filteredCardData.text}</p>
+
+                <div className="card-footer">
+                  <div className="card-footer-links">
+                    <Github
+                      size={25}
+                      onClick={() =>
+                        this.handleClick(filteredCardData.gitHubUrl)
+                      }
                     />
-                    <p className="card-text">{card.text}</p>
-                    <div className="card-social-links">
-                      <Github className="github" size={25} />
-                      <Linkedin className="linkedin" size={25} />
-                    </div>
+                    <ArrowDownRightSquare
+                      onClick={() => this.handleClick(filteredCardData.url)}
+                      size={25}
+                    />
                   </div>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         )}
         <div className="project-list">
-          {cardData.map((card, index) => (
-            <a key={index} onClick={() => this.handleCardClick(index + 1)}>
-              <p className="card-text">{card.title}</p>
-            </a>
-          ))}
+          <ul>
+            {cardData.map((card, index) => (
+              <li>
+                <a key={index} onClick={() => this.handleCardClick(index + 1)}>
+                  <p className="card-text">{card.title}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     );

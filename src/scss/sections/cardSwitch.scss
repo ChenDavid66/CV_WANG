@@ -1,53 +1,114 @@
 .card-switch-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  
-  .card-list {
-    border-right: 1px solid #ccc;
-  }
-  .description {
-    flex-basis: 50%;
-    transition: all 0.5s ease;
-  }
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   .project-list {
     flex-basis: 50%;
-  }
-  
-  .card-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border: 2px solid gray;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-    transition: border-color 0.3s ease-in-out;
-  }
-  
-  .card-list-item:hover {
-    border-color: blue;
-  }
-  
-  .card-list-item-active {
-    border-color: blue;
-  }
-  
-  .card {
-    width: 100%;
-  }
-  
-  .card-image {
-    width: 100%;
-  }
-  
-  .card-text {
-    text-align: center;
-  }
-  
-  .card-social-links {
+    list-style: none;
+    color: grey;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: large;
+    ul {
+      list-style: none;
+      display: inline-block;
+      li {
+        margin: 4px;
+      }
+      li:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+      }
+
+      li:hover a {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
   }
+}
+@keyframes color-change {
+  0% {
+    color: grey;
+  }
+  100% {
+    color: white;
+  }
+}
+.card-list {
+  border-right: 1px solid #ccc;
+}
+.description {
+  flex-basis: 50%;
+  transition: all 0.5s ease;
+  color: white;
+  h1 {
+    animation: color-change 3s linear forwards;
+  }
+}
+
+.card-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.card-list-item:hover {
+  border-color: blue;
+}
+
+.card-list-item-active {
+  border-color: blue;
+}
+
+.card {
+  flex-direction: row;
+  display: flex;
+  color: black;
+}
+.card-link {
+  width: 50%;
+  display: flex;
+}
+.card-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0.9375rem;
+  gap: 1.25rem;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  &:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .card-footer-links {
+    display: flex;
+    gap: 28px;
+  }
+}
+.card-image {
+  width: 100%;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-social-links {
+  display: flex;
+  justify-content: center;
+}
