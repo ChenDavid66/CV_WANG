@@ -90,12 +90,13 @@
   align-items: center;
   margin-top: auto;
   padding-top: 0.75rem;
-  &:hover {
-    color: black;
-    cursor: pointer;
-    transform: scale(1.1);
-  }
+
   .card-footer-links {
+    &:hover {
+      color: black;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
     display: flex;
     gap: 28px;
   }

@@ -97,6 +97,8 @@ class CardSwitch extends Component<CardSwitchProps, CardSwitchState> {
                         this.handleClick(filteredCardData.gitHubUrl)
                       }
                     />
+                  </div>
+                  <div className="card-footer-links">
                     <ArrowDownRightSquare
                       onClick={() => this.handleClick(filteredCardData.url)}
                       size={25}
