@@ -39,9 +39,7 @@ export class Contact extends React.Component {
         </div>
         <Row>
           <Col md={12}>
-            <div className="loading-text">
-              <h1 /* onClick={() => ()} */>dw.wang.pro@gmail.com</h1>
-            </div>
+            <div className="loading-text">dw.wang.pro@gmail.com</div>
           </Col>
         </Row>
       </Section>

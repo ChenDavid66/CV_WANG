@@ -1,37 +1,35 @@
-
 .iconContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    svg{
-        margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    margin: 0 50px;
+  }
+
+  .linkedin {
+    &:hover {
+      color: #007bff;
+      cursor: pointer;
+      transform: scale(1.1);
     }
-        
-        .linkedin{
-            &:hover {
-                color: #007bff;
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-        }
-        .github{
-            &:hover {
-                color: black;
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-        }
-    
+  }
+  .github {
+    &:hover {
+      color: black;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
 }
 
-
 .loading-text {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .loading-text h1 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* .loading-text h1 {
     display: inline-block;
     animation: colorize 3s linear infinite;
     color: transparent;
@@ -43,13 +41,13 @@
       blue,
       red
     );
+  } */
+
+@keyframes colorize {
+  0% {
+    background-position: 100% 0;
   }
-  
-  @keyframes colorize {
-    0% {
-      background-position: 100% 0;
-    }
-    100% {
-      background-position: -100% 0;
-    }
+  100% {
+    background-position: -100% 0;
   }
+}
